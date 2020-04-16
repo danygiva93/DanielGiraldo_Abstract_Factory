@@ -1,13 +1,14 @@
 class moto{
     constructor(
-        paca='WCR87D',
-        model='cbr',
-        tipo='deportiva',
-        transmision='manual',
-        cilindraje=250,
-        color='rojo'
+        paca='',
+        model='',
+        tipo='',
+        transmision='',
+        cilindraje='',
+        color=''
         
-    ){
+    )
+    {
         this.paca = paca;
         this.configuration = {
             model,
