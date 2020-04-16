@@ -1,9 +1,9 @@
-const cbr = require('./phone');
+const moto = require('./moto');
 
-class cbr250 {
+class cbr {
     constructor(placa){
-        return new cbr(placa, 'Honda', 'cbr', 'deportiva', 'mecanica', 250, 'roja');
+        return new moto(placa, 'Honda', 'cbr', 'deportiva', 'mecanica', 250, 'roja');
     }
 }
 
-module.exports = cbr250;
+module.exports = cbr;

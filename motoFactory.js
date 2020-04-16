@@ -1,16 +1,21 @@
-const CBR  = require('./moto-cbr');
+const cbr = require('./moto-cbr');
+const kawasaki = require('./moto-kawasaki');
 
-class motofactory {
+class Motofactory {
     create(type, placa){
         switch(type){
             
-            case 'moto':
-                return new CBR(placa);
+            case 'cbr':
+                return new cbr(placa);
 
+
+            case 'kawasaki':
+                return new kawasaki(placa);
+    
             default: {
-                console.log('motorcicle not found.');
+                console.log('motocicleta no existe.');
             }
         }
     }
 }
-module.exports = new motofactory;
+module.exports = new Motofactory;

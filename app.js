@@ -1,4 +1,4 @@
-const motofactory = require('./motoFactory');
+const Motofactory = require('./motoFactory');
 
-const cbrFactory = motofactory.create('CBR250', 'WCR87D');
+const cbrFactory = Motofactory.create('cbr', 'WCR87D');
 cbrFactory.displayConfig();
